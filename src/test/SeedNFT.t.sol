@@ -9,7 +9,7 @@ import {Utilities} from "../utils/Utilities.sol";
 import {SeedNFT} from "../SeedNFT.sol";
 
 contract SeedNFTTest is DSTest {
-    Vm internal vm;
+    Vm internal immutable vm = Vm(HEVM_ADDRESS);
     Utilities internal utils;
     SeedNFT internal seednft;
     address internal jawaun;
@@ -23,10 +23,10 @@ contract SeedNFTTest is DSTest {
         joel = users[1];
         /* price - 0, maxSupply - 1, maxPerAddress - 2, 
         publicSaleTime - 3, _maxTxPerAddress - 4 */
-        uint256[5] memory numericValues = [uint256(0.08 ether), uint256(10), 
-        uint256(1), uint256(100), uint256(2)];
+        uint256[5] memory numericValues = [uint256(0.08 ether), uint256(20), 
+        uint256(4), uint256(100), uint256(3)];
         seednft = new SeedNFT(
-            "oasisnft", "OAS", "ipfs:/x", 
+            "oasisnft", "OAS", "ipfs://QmUV6Uo8HsXhbeQkCoGX2sr9Ukxc4ufAkWswyd1FEvQaDx/", 
             numericValues, jawaun, 10
         );
     }
@@ -42,18 +42,50 @@ contract SeedNFTTest is DSTest {
     uint256 maxTxPerAddress
     */
     function testSetSaleInfo() public {
-        seednft.setSaleInformation(105, 2, 0.08 ether, 4);
+        seednft.setSaleInformation(100, 2, 0.1 ether, 4);
+        uint256 currMaxPerAddress = seednft.MAX_TOTAL_MINT_PER_ADDRESS();
+        uint256 currPrice = seednft.PRICE();
+        uint256 maxTxsPerAddress = seednft._maxTxPerAddress();
+        assertEq(currMaxPerAddress, 2);
+        assertEq(currPrice, 0.1 ether);
+        assertEq(maxTxsPerAddress, 4);
     }
+
     //string memory baseUri
-    function testSetBaseUri() public {}
+    function testSetBaseUri() public {
+        string memory currUri = seednft._baseTokenURI();
+        console.log("Base URI", currUri);
+    }
 
     // address to, uint256 count
-    function testMint() public {}
+    function testMinting() public{
+        vm.warp(105);
+        seednft.mint(joel, 3);
+        seednft.mint(jawaun, 2);
+    }
+
+    function testIPFSTokenID() public {
+        vm.warp(105);
+        seednft.mint(joel, 3);
+        string memory uri = seednft.tokenURI(1);
+        console.log("uri", uri);
+    }
+
+    function testIsPublicSaleActiveWhenActive() public {
+        vm.warp(105);
+        bool publicSaleActive = seednft.isPublicSaleActive();
+        assertTrue(publicSaleActive);
+    }
+
+    function testIsPublicSaleActiveWhenInactive() public {
+        vm.warp(99);
+        bool publicSaleActive = seednft.isPublicSaleActive();
+        assertTrue(publicSaleActive == false);
+    }
 
     // uint256 count
     function testPurchase() public {} // whenNotPaused
 
-    function testIsPublicSaleActive() public {}
     function testIsPreSaleActive() public {}
     function testMAX_TOTAL_MINT() public {} 
     function testPRICE() public {}

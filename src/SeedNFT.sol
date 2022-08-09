@@ -102,7 +102,6 @@ contract SeedNFT is Ownable, ERC721AWithRoyalties, Pausable {
     address royaltyRecipient,
     uint256 royaltyAmount
   ) ERC721AWithRoyalties(name, symbol, numericValues[1], royaltyRecipient, royaltyAmount) {
-    this;
     _baseTokenURI = baseTokenURI;
     _price = numericValues[0];
     _maxSupply = numericValues[1];
@@ -132,26 +131,25 @@ contract SeedNFT is Ownable, ERC721AWithRoyalties, Pausable {
   function _baseURI() override internal view virtual returns (string memory) {
     return string(
       abi.encodePacked(
-        _baseTokenURI,
-        Strings.toHexString(uint256(uint160(address(this))), 20),
-        '/'
+        _baseTokenURI
       )
     );
   }
 
   function mint(address to, uint256 count) external payable onlyOwner {
     ensureMintConditions(count);
-
     _safeMint(to, count);
   }
 
   function purchase(uint256 count) external payable whenNotPaused {
+    require(msg.value == count * _price);
     ensurePublicMintConditions(msg.sender, count, _maxPerAddress);
     require(isPublicSaleActive(), "BASE_COLLECTION/CANNOT_MINT");
 
     _purchases[msg.sender] += count;
     _safeMint(msg.sender, count);
-    emit Purchase(msg.sender, _price, count);
+    uint256 totalPrice = count * _price;
+    emit Purchase(msg.sender, totalPrice, count);
   }
 
   function ensureMintConditions(uint256 count) internal view {
@@ -160,10 +158,10 @@ contract SeedNFT is Ownable, ERC721AWithRoyalties, Pausable {
 
   function ensurePublicMintConditions(address to, uint256 count, uint256 maxPerAddress) internal view {
     ensureMintConditions(count);
-
     require((_maxTxPerAddress == 0) || (count <= _maxTxPerAddress), "BASE_COLLECTION/EXCEEDS_MAX_PER_TRANSACTION");
     uint256 totalMintFromAddress = _purchases[to] + count;
     require ((maxPerAddress == 0) || (totalMintFromAddress <= maxPerAddress), "BASE_COLLECTION/EXCEEDS_INDIVIDUAL_SUPPLY");
+
   }
 
   function isPublicSaleActive() public view returns (bool) {
