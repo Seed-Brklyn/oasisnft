@@ -2,9 +2,9 @@
 
 pragma solidity ^0.8.9;
 
-import "./Ownable.sol";
-import "./Pausable.sol";
-import "./ERC721AWithRoyalties.sol";
+import "./helpers/Ownable.sol";
+import "./helpers/Pausable.sol";
+import "./helpers/ERC721AWithRoyalties.sol";
 
 
 //       :-- --::--      :-- --. -- --.   -- --..-: --   :-: -- .-- --.       
@@ -98,12 +98,12 @@ contract SeedNFT is Ownable, ERC721AWithRoyalties, Pausable {
     string memory name,
     string memory symbol,
     string memory baseTokenURI,
-    uint256[] memory numericValues, // price - 0, maxSupply - 1, maxPerAddress - 2, publicSaleTime - 3, _maxTxPerAddress - 4
+    uint256[5] memory numericValues, // price - 0, maxSupply - 1, maxPerAddress - 2, publicSaleTime - 3, _maxTxPerAddress - 4
     address royaltyRecipient,
     uint256 royaltyAmount
   ) ERC721AWithRoyalties(name, symbol, numericValues[1], royaltyRecipient, royaltyAmount) {
+    this;
     _baseTokenURI = baseTokenURI;
-
     _price = numericValues[0];
     _maxSupply = numericValues[1];
     _maxPerAddress = numericValues[2];
