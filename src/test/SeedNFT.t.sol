@@ -48,17 +48,17 @@ contract SeedNFTTest is DSTest {
     function testSetBaseUri() public {}
 
     // address to, uint256 count
-    function testMint()
+    function testMint() public {}
 
     // uint256 count
-    function testPurchase() // whenNotPaused
+    function testPurchase() public {} // whenNotPaused
 
-    function testIsPublicSaleActive()public {}
-    function testIsPreSaleActive()public {}
-    function testMAX_TOTAL_MINT()public {} 
-    function testPRICE()public {}
-    function testMAX_TOTAL_MINT_PER_ADDRESS()public {}
-    function testPause()public {}
-    function testUnpause()public {}
+    function testIsPublicSaleActive() public {}
+    function testIsPreSaleActive() public {}
+    function testMAX_TOTAL_MINT() public {} 
+    function testPRICE() public {}
+    function testMAX_TOTAL_MINT_PER_ADDRESS() public {}
+    function testPause() public {}
+    function testUnpause() public {}
     // function testX() public {}
 }
