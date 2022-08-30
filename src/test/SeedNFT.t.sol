@@ -21,13 +21,24 @@ contract SeedNFTTest is DSTest {
         users = utils.createUsers(3);
         jawaun = users[0];
         joel = users[1];
-        /* price - 0, maxSupply - 1, maxPerAddress - 2, 
+        /* price - 0, maxSupply - 1, maxPerAddress - 2,
         publicSaleTime - 3, _maxTxPerAddress - 4 */
-        uint256[5] memory numericValues = [uint256(0.08 ether), uint256(20), 
+        // 0.08 ether, 20, 4, 100, 3
+        /*
+        "XYZ", "x", "ipfs://QmUV6Uo8HsXhbeQkCoGX2sr9Ukxc4ufAkWswyd1FEvQaDx/", [1,100, 2, 100, 3], 0x68E9C7983665eEF302AA2a6FD69B11fbfd655AE9, 1000
+        0x68E9C7983665eEF302AA2a6FD69B11fbfd655AE9, 2
+
+        "demo4nft", "OAS", "ipfs://QmUV6Uo8HsXhbeQkCoGX2sr9Ukxc4ufAkWswyd1FEvQaDx/", [1,100, 2, 100, 3], 0x68E9C7983665eEF302AA2a6FD69B11fbfd655AE9, 1000
+        0x68E9C7983665eEF302AA2a6FD69B11fbfd655AE9, 2
+
+        "demo4nft", "OAS", "ipfs://QmUV6Uo8HsXhbeQkCoGX2sr9Ukxc4ufAkWswyd1FEvQaDx/", [1,100, 2, 100, 3], 0x68E9C7983665eEF302AA2a6FD69B11fbfd655AE9, 1000, 0x68E9C7983665eEF302AA2a6FD69B11fbfd655AE9, 2 
+        ^ deployed @ 0x486409104819A2B16DA01e5C904335596aac540E on Ropsten
+        */
+        uint256[5] memory numericValues = [uint256(0.08 ether), uint256(20),
         uint256(4), uint256(100), uint256(3)];
         seednft = new SeedNFT(
             "oasisnft", "OAS", "ipfs://QmUV6Uo8HsXhbeQkCoGX2sr9Ukxc4ufAkWswyd1FEvQaDx/", 
-            numericValues, jawaun, 10
+            numericValues, jawaun, 1000
         );
     }
 
@@ -84,12 +95,19 @@ contract SeedNFTTest is DSTest {
     }
 
     // uint256 count
-    function testPurchase() public {} // whenNotPaused
+    function testPurchase() public {
+        vm.warp(105);
+        vm.prank(jawaun);
+        seednft.purchase{value: 0.16 ether}(2);
+        vm.stopPrank();
+    } // whenNotPaused
 
     function testIsPreSaleActive() public {}
-    function testMAX_TOTAL_MINT() public {} 
-    function testPRICE() public {}
-    function testMAX_TOTAL_MINT_PER_ADDRESS() public {}
+    function testMAX_TOTAL_MINT() public {
+        uint256 maxsply = seednft.MAX_TOTAL_MINT();
+        assertEq(maxsply, 20);
+    } 
+
     function testPause() public {}
     function testUnpause() public {}
     // function testX() public {}
