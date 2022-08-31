@@ -1,7 +1,17 @@
 {
-  "_format": "ethers-rs-sol-cache-2",
+  "_format": "ethers-rs-sol-cache-3",
+  "paths": {
+    "artifacts": "out",
+    "build_infos": "out/build-info",
+    "sources": "src",
+    "tests": "test",
+    "scripts": "script",
+    "libraries": [
+      "lib"
+    ]
+  },
   "files": {
-    "/Users/jawaun/oasisnft/lib/ds-test/src/test.sol": {
+    "lib/ds-test/src/test.sol": {
       "lastModificationDate": 1659374342208,
       "contentHash": "962996f0e05d5218857a538a62d7c47e",
       "sourceName": "lib/ds-test/src/test.sol",
@@ -10,6 +20,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -20,11 +33,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [],
@@ -35,7 +50,7 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/lib/forge-std/src/Script.sol": {
+    "lib/forge-std/src/Script.sol": {
       "lastModificationDate": 1659459712806,
       "contentHash": "b313d0193442f5a12848be9c422a0064",
       "sourceName": "lib/forge-std/src/Script.sol",
@@ -44,6 +59,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -54,11 +72,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [
@@ -73,7 +93,7 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/lib/forge-std/src/Test.sol": {
+    "lib/forge-std/src/Test.sol": {
       "lastModificationDate": 1661887648326,
       "contentHash": "8e1ae731c7bb8023f36077d86d18693f",
       "sourceName": "lib/forge-std/src/Test.sol",
@@ -82,6 +102,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -92,11 +115,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [
@@ -122,7 +147,7 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/lib/forge-std/src/Vm.sol": {
+    "lib/forge-std/src/Vm.sol": {
       "lastModificationDate": 1661887648326,
       "contentHash": "edea6a0e9d52be7469978168f52a3ee2",
       "sourceName": "lib/forge-std/src/Vm.sol",
@@ -131,6 +156,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -141,11 +169,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [],
@@ -156,7 +186,7 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/lib/forge-std/src/console.sol": {
+    "lib/forge-std/src/console.sol": {
       "lastModificationDate": 1659459712807,
       "contentHash": "100b8a33b917da1147740d7ab8b0ded3",
       "sourceName": "lib/forge-std/src/console.sol",
@@ -166,6 +196,9 @@
             "enabled": true,
             "runs": 200
           },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
           "outputSelection": {
             "*": {
               "": [
@@ -175,22 +208,24 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [],
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
         "console": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "console.sol/console.json"
+          "0.8.10+commit.fc410830.Darwin.appleclang": "src/console.sol/console.json"
         }
       }
     },
-    "/Users/jawaun/oasisnft/lib/forge-std/src/console2.sol": {
+    "lib/forge-std/src/console2.sol": {
       "lastModificationDate": 1659459712807,
       "contentHash": "5df91f8e93efbfcccf68973dc1b74a70",
       "sourceName": "lib/forge-std/src/console2.sol",
@@ -200,6 +235,9 @@
             "enabled": true,
             "runs": 200
           },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
           "outputSelection": {
             "*": {
               "": [
@@ -209,11 +247,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [],
@@ -224,15 +264,18 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/src/SeedNFT.sol": {
-      "lastModificationDate": 1661888877387,
-      "contentHash": "db95f5ca5f7076dacbfdcf8403925f98",
+    "src/SeedNFT.sol": {
+      "lastModificationDate": 1661897905234,
+      "contentHash": "ea370a5dc73e934f54add084e37c12c6",
       "sourceName": "src/SeedNFT.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -243,11 +286,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [
@@ -273,7 +318,7 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/src/helpers/Address.sol": {
+    "src/helpers/Address.sol": {
       "lastModificationDate": 1659469302000,
       "contentHash": "d48cad53b766d22f2f8852806776cf7b",
       "sourceName": "src/helpers/Address.sol",
@@ -282,6 +327,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -292,11 +340,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [],
@@ -307,7 +357,7 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/src/helpers/Context.sol": {
+    "src/helpers/Context.sol": {
       "lastModificationDate": 1659469302000,
       "contentHash": "c4b296fb9a98a645ca52cc72c3fbae06",
       "sourceName": "src/helpers/Context.sol",
@@ -316,6 +366,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -326,11 +379,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [],
@@ -341,7 +396,7 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/src/helpers/ERC165.sol": {
+    "src/helpers/ERC165.sol": {
       "lastModificationDate": 1659457507634,
       "contentHash": "43815742616b32123fe16f92f896bd06",
       "sourceName": "src/helpers/ERC165.sol",
@@ -350,6 +405,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -360,11 +418,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [
@@ -377,7 +437,7 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/src/helpers/ERC721A.sol": {
+    "src/helpers/ERC721A.sol": {
       "lastModificationDate": 1659459011878,
       "contentHash": "15b6cc06fe31e0b58ca8c8777abb47ce",
       "sourceName": "src/helpers/ERC721A.sol",
@@ -386,6 +446,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -396,11 +459,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [
@@ -421,8 +486,8 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/src/helpers/ERC721AWithRoyalties.sol": {
-      "lastModificationDate": 1659457544357,
+    "src/helpers/ERC721AWithRoyalties.sol": {
+      "lastModificationDate": 1661891316664,
       "contentHash": "dab69dabf25180a68793ac9a827ca3f0",
       "sourceName": "src/helpers/ERC721AWithRoyalties.sol",
       "solcConfig": {
@@ -430,6 +495,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -440,11 +508,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [
@@ -468,7 +538,7 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/src/helpers/IERC165.sol": {
+    "src/helpers/IERC165.sol": {
       "lastModificationDate": 1659469302000,
       "contentHash": "0fb8a98c0dcbb3f0f693ed5e24e0f32f",
       "sourceName": "src/helpers/IERC165.sol",
@@ -477,6 +547,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -487,11 +560,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [],
@@ -502,7 +577,7 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/src/helpers/IERC2981Royalties.sol": {
+    "src/helpers/IERC2981Royalties.sol": {
       "lastModificationDate": 1659469302000,
       "contentHash": "e837f74f62d3cbef834d7548fc4a8b08",
       "sourceName": "src/helpers/IERC2981Royalties.sol",
@@ -511,6 +586,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -521,11 +599,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [],
@@ -536,7 +616,7 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/src/helpers/IERC721.sol": {
+    "src/helpers/IERC721.sol": {
       "lastModificationDate": 1659457494896,
       "contentHash": "1854a6711d07eb1397eb3031b0a4ca95",
       "sourceName": "src/helpers/IERC721.sol",
@@ -545,6 +625,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -555,11 +638,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [
@@ -572,7 +657,7 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/src/helpers/IERC721Enumerable.sol": {
+    "src/helpers/IERC721Enumerable.sol": {
       "lastModificationDate": 1659457549693,
       "contentHash": "31bd9b2d572731a1caebad74a80f0902",
       "sourceName": "src/helpers/IERC721Enumerable.sol",
@@ -581,6 +666,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -591,11 +679,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [
@@ -609,7 +699,7 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/src/helpers/IERC721Metadata.sol": {
+    "src/helpers/IERC721Metadata.sol": {
       "lastModificationDate": 1659457552529,
       "contentHash": "1519dfbbc52dc0f51582842f789e95c8",
       "sourceName": "src/helpers/IERC721Metadata.sol",
@@ -618,6 +708,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -628,11 +721,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [
@@ -646,7 +741,7 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/src/helpers/IERC721Receiver.sol": {
+    "src/helpers/IERC721Receiver.sol": {
       "lastModificationDate": 1659469302000,
       "contentHash": "5d36c61f7529734e6456193601c95d5d",
       "sourceName": "src/helpers/IERC721Receiver.sol",
@@ -655,6 +750,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -665,11 +763,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [],
@@ -680,7 +780,7 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/src/helpers/Ownable.sol": {
+    "src/helpers/Ownable.sol": {
       "lastModificationDate": 1659457556346,
       "contentHash": "9cc44a70849e3b6acc652e1157d09fbf",
       "sourceName": "src/helpers/Ownable.sol",
@@ -689,6 +789,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -699,11 +802,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [
@@ -716,7 +821,7 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/src/helpers/Pausable.sol": {
+    "src/helpers/Pausable.sol": {
       "lastModificationDate": 1659457558750,
       "contentHash": "dac4e841dbe2106ac80535980e6aa072",
       "sourceName": "src/helpers/Pausable.sol",
@@ -725,6 +830,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -735,11 +843,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [
@@ -752,7 +862,7 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/src/helpers/Strings.sol": {
+    "src/helpers/Strings.sol": {
       "lastModificationDate": 1659457567512,
       "contentHash": "f90e6606083fa5398e2c8377db1a4536",
       "sourceName": "src/helpers/Strings.sol",
@@ -761,6 +871,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -771,11 +884,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [],
@@ -786,15 +901,18 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/src/test/SeedNFT.t.sol": {
-      "lastModificationDate": 1661888303350,
-      "contentHash": "2970fa7dfbe9bfca432a1f02dfe2f1fd",
+    "src/test/SeedNFT.t.sol": {
+      "lastModificationDate": 1661897964806,
+      "contentHash": "07c9a567b33a3d5d190c1aab67f54b55",
       "sourceName": "src/test/SeedNFT.t.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -805,11 +923,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [
@@ -843,7 +963,7 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/src/utils/Console.sol": {
+    "src/utils/Console.sol": {
       "lastModificationDate": 1659471893326,
       "contentHash": "9e3ac94a4e6e57d32fa3a5d912a124c2",
       "sourceName": "src/utils/Console.sol",
@@ -852,6 +972,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -862,11 +985,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [],
@@ -877,7 +1002,7 @@
         }
       }
     },
-    "/Users/jawaun/oasisnft/src/utils/Utilities.sol": {
+    "src/utils/Utilities.sol": {
       "lastModificationDate": 1659471875189,
       "contentHash": "f7fd76b120e1ecb2f3f83c8342e39576",
       "sourceName": "src/utils/Utilities.sol",
@@ -886,6 +1011,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
           },
           "outputSelection": {
             "*": {
@@ -896,11 +1024,13 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london"
+          "evmVersion": "london",
+          "libraries": {}
         }
       },
       "imports": [

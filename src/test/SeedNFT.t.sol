@@ -22,7 +22,15 @@ contract SeedNFTTest is DSTest {
         jawaun = users[0];
         joel = users[1];
         /* price - 0, maxSupply - 1, maxPerAddress - 2,
-        publicSaleTime - 3, _maxTxPerAddress - 4 */
+        publicSaleTime - 3, _maxTxPerAddress - 4 
+        
+        [price, maxSupply, maxPerAddress, publicSaleTime, _maxTxPerAddress]
+        */
+
+        // !! 1000000000000000000 1x10^18 wei = 1 ether, 
+        // 8e+16 = .08 eth
+        // !! 80000000000000000 = 0.08 ether
+
         // 0.08 ether, 20, 4, 100, 3
         /*
         "XYZ", "x", "ipfs://QmUV6Uo8HsXhbeQkCoGX2sr9Ukxc4ufAkWswyd1FEvQaDx/", [1,100, 2, 100, 3], 0x68E9C7983665eEF302AA2a6FD69B11fbfd655AE9, 1000
@@ -33,12 +41,18 @@ contract SeedNFTTest is DSTest {
 
         "demo4nft", "OAS", "ipfs://QmUV6Uo8HsXhbeQkCoGX2sr9Ukxc4ufAkWswyd1FEvQaDx/", [1,100, 2, 100, 3], 0x68E9C7983665eEF302AA2a6FD69B11fbfd655AE9, 1000, 0x68E9C7983665eEF302AA2a6FD69B11fbfd655AE9, 2 
         ^ deployed @ 0x486409104819A2B16DA01e5C904335596aac540E on Ropsten
-        */
-        uint256[5] memory numericValues = [uint256(0.08 ether), uint256(20),
-        uint256(4), uint256(100), uint256(3)];
+        */ 
+        // price, maxSupply, maxPerAddress, publicSaleTime, maxTxPerAddress
+        uint256 price = 0.08 ether;
+        uint256 maxSupply = 20;
+        uint256 maxPerAddress = 4;
+        uint256 publicSaleTime = 100;
+        uint256 maxTxPerAddress = 3;
+        // uint256[5] memory numericValues = [uint256(0.08 ether), uint256(20),
+        // uint256(4), uint256(100), uint256(3)];
         seednft = new SeedNFT(
-            "oasisnft", "OAS", "ipfs://QmUV6Uo8HsXhbeQkCoGX2sr9Ukxc4ufAkWswyd1FEvQaDx/", 
-            numericValues, jawaun, 1000
+            "oasisnft", "OAS", "ipfs://QmUV6Uo8HsXhbeQkCoGX2sr9Ukxc4ufAkWswyd1FEvQaDx/",
+            price, maxSupply, maxPerAddress, publicSaleTime, maxTxPerAddress, jawaun, 1000
         );
     }
 
@@ -63,7 +77,7 @@ contract SeedNFTTest is DSTest {
     }
 
     //string memory baseUri
-    function testSetBaseUri() public {
+    function testSetBaseUri() public view {
         string memory currUri = seednft._baseTokenURI();
         console.log("Base URI", currUri);
     }
