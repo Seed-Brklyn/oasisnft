@@ -98,16 +98,21 @@ contract SeedNFT is Ownable, ERC721AWithRoyalties, Pausable {
     string memory name,
     string memory symbol,
     string memory baseTokenURI,
-    uint256[5] memory numericValues, // price - 0, maxSupply - 1, maxPerAddress - 2, publicSaleTime - 3, _maxTxPerAddress - 4
+    uint256 price,
+    uint256 maxSupply,
+    uint256 maxPerAddress,
+    uint256 publicSaleTime,
+    uint256 maxTxPerAddress,
+   // price - 0, maxSupply - 1, maxPerAddress - 2, publicSaleTime - 3, _maxTxPerAddress - 4
     address royaltyRecipient,
     uint256 royaltyAmount
-  ) ERC721AWithRoyalties(name, symbol, numericValues[1], royaltyRecipient, royaltyAmount) {
+  ) ERC721AWithRoyalties(name, symbol, maxSupply, royaltyRecipient, royaltyAmount) {
     _baseTokenURI = baseTokenURI;
-    _price = numericValues[0];
-    _maxSupply = numericValues[1];
-    _maxPerAddress = numericValues[2];
-    _publicSaleTime = numericValues[3];
-    _maxTxPerAddress = numericValues[4];
+    _price = price;
+    _maxSupply = maxSupply;
+    _maxPerAddress = maxPerAddress;
+    _publicSaleTime = publicSaleTime;
+    _maxTxPerAddress = maxTxPerAddress;
   }
 
   function setSaleInformation(
