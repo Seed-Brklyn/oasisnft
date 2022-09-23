@@ -21,28 +21,6 @@ contract SeedNFTTest is DSTest {
         users = utils.createUsers(3);
         jawaun = users[0];
         joel = users[1];
-        /* price - 0, maxSupply - 1, maxPerAddress - 2,
-        publicSaleTime - 3, _maxTxPerAddress - 4 
-        
-        [price, maxSupply, maxPerAddress, publicSaleTime, _maxTxPerAddress]
-        */
-
-        // !! 1000000000000000000 1x10^18 wei = 1 ether, 
-        // 8e+16 = .08 eth
-        // !! 80000000000000000 = 0.08 ether
-
-        // 0.08 ether, 20, 4, 100, 3
-        /*
-        "XYZ", "x", "ipfs://QmUV6Uo8HsXhbeQkCoGX2sr9Ukxc4ufAkWswyd1FEvQaDx/", [1,100, 2, 100, 3], 0x68E9C7983665eEF302AA2a6FD69B11fbfd655AE9, 1000
-        0x68E9C7983665eEF302AA2a6FD69B11fbfd655AE9, 2
-
-        "demo4nft", "OAS", "ipfs://QmUV6Uo8HsXhbeQkCoGX2sr9Ukxc4ufAkWswyd1FEvQaDx/", [1,100, 2, 100, 3], 0x68E9C7983665eEF302AA2a6FD69B11fbfd655AE9, 1000
-        0x68E9C7983665eEF302AA2a6FD69B11fbfd655AE9, 2
-
-        "demo4nft", "OAS", "ipfs://QmUV6Uo8HsXhbeQkCoGX2sr9Ukxc4ufAkWswyd1FEvQaDx/", [1,100, 2, 100, 3], 0x68E9C7983665eEF302AA2a6FD69B11fbfd655AE9, 1000, 0x68E9C7983665eEF302AA2a6FD69B11fbfd655AE9, 2 
-        ^ deployed @ 0x486409104819A2B16DA01e5C904335596aac540E on Ropsten
-        */ 
-        // price, maxSupply, maxPerAddress, publicSaleTime, maxTxPerAddress
         uint256 price = 0.08 ether;
         uint256 maxSupply = 20;
         uint256 maxPerAddress = 4;
@@ -76,11 +54,9 @@ contract SeedNFTTest is DSTest {
         assertEq(maxTxsPerAddress, 4);
     }
 
-    //string memory baseUri
-    function testSetBaseUri() public view {
-        string memory currUri = seednft._baseTokenURI();
-        console.log("Base URI", currUri);
-    }
+    // function testSetBaseUri() public view {
+    //     string memory currUri = seednft._baseTokenURI();
+    // }
 
     // address to, uint256 count
     function testMinting() public{
@@ -89,12 +65,11 @@ contract SeedNFTTest is DSTest {
         seednft.mint(jawaun, 2);
     }
 
-    function testIPFSTokenID() public {
-        vm.warp(105);
-        seednft.mint(joel, 3);
-        string memory uri = seednft.tokenURI(1);
-        console.log("uri", uri);
-    }
+    // function testIPFSTokenID() public {
+    //     vm.warp(105);
+    //     seednft.mint(joel, 3);
+    //     string memory uri = seednft.tokenURI(1);
+    // }
 
     function testIsPublicSaleActiveWhenActive() public {
         vm.warp(105);
@@ -120,9 +95,18 @@ contract SeedNFTTest is DSTest {
     function testMAX_TOTAL_MINT() public {
         uint256 maxsply = seednft.MAX_TOTAL_MINT();
         assertEq(maxsply, 20);
-    } 
+    }
 
-    function testPause() public {}
-    function testUnpause() public {}
+    function testGetLicenseURI() public {
+        string memory licenseBaseURI = seednft.getLicenseURI();
+        string memory desiredLicenseBaseURI = "ar://_D9kN1WrNWbCq55BSAGRbTB4bS3v8QAPTYmBThSbX3A/5";
+        assertEq(licenseBaseURI, desiredLicenseBaseURI);
+    }
+    function testGetLicenseName() public {
+        string memory licenseName = seednft.getLicenseName();
+        string memory desiredLicenseName = "CBE_PR_HS";
+        assertEq(licenseName, desiredLicenseName);
+    }
+
     // function testX() public {}
 }

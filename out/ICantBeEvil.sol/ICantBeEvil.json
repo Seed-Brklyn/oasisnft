@@ -1,0 +1,276 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getLicenseName",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getLicenseURI",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getLicenseName()": "a341793b",
+    "getLicenseURI()": "c7db2893"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.16+commit.07a7930e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getLicenseName\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getLicenseURI\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/licenses/ICantBeEvil.sol\":\"ICantBeEvil\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\"]},\"sources\":{\"src/licenses/ICantBeEvil.sol\":{\"keccak256\":\"0x365baf8687d4d9c7632db00b7e2bc15e0e89d2206be1715974d3f706ed8663a5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://068ea80710b2d38305bf2167e54c7ba16a774fb9976b55369c62d4cc7d0656f8\",\"dweb:/ipfs/QmVje4Bj8bNqcYfNo1Ahnb8qgWq1EbR4fVLvtgHb9CJgzy\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.16+commit.07a7930e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getLicenseName",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getLicenseURI",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/licenses/ICantBeEvil.sol": "ICantBeEvil"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/licenses/ICantBeEvil.sol": {
+        "keccak256": "0x365baf8687d4d9c7632db00b7e2bc15e0e89d2206be1715974d3f706ed8663a5",
+        "urls": [
+          "bzz-raw://068ea80710b2d38305bf2167e54c7ba16a774fb9976b55369c62d4cc7d0656f8",
+          "dweb:/ipfs/QmVje4Bj8bNqcYfNo1Ahnb8qgWq1EbR4fVLvtgHb9CJgzy"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/licenses/ICantBeEvil.sol",
+    "id": 24420,
+    "exportedSymbols": {
+      "ICantBeEvil": [
+        24419
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "75:188:22",
+    "nodes": [
+      {
+        "id": 24408,
+        "nodeType": "PragmaDirective",
+        "src": "75:24:22",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 24419,
+        "nodeType": "ContractDefinition",
+        "src": "101:162:22",
+        "nodes": [
+          {
+            "id": 24413,
+            "nodeType": "FunctionDefinition",
+            "src": "129:63:22",
+            "functionSelector": "c7db2893",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLicenseURI",
+            "nameLocation": "138:13:22",
+            "parameters": {
+              "id": 24409,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "151:2:22"
+            },
+            "returnParameters": {
+              "id": 24412,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 24411,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 24413,
+                  "src": "177:13:22",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 24410,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "177:6:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "176:15:22"
+            },
+            "scope": 24419,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 24418,
+            "nodeType": "FunctionDefinition",
+            "src": "197:64:22",
+            "functionSelector": "a341793b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLicenseName",
+            "nameLocation": "206:14:22",
+            "parameters": {
+              "id": 24414,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "220:2:22"
+            },
+            "returnParameters": {
+              "id": 24417,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 24416,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 24418,
+                  "src": "246:13:22",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 24415,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "246:6:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "245:15:22"
+            },
+            "scope": 24419,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ICantBeEvil",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          24419
+        ],
+        "name": "ICantBeEvil",
+        "nameLocation": "111:11:22",
+        "scope": 24420,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 22
+}

@@ -46,12 +46,12 @@
       "versionRequirement": ">=0.5.0",
       "artifacts": {
         "DSTest": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "test.sol/DSTest.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "test.sol/DSTest.json"
         }
       }
     },
     "lib/forge-std/src/Script.sol": {
-      "lastModificationDate": 1659459712806,
+      "lastModificationDate": 1662522217377,
       "contentHash": "b313d0193442f5a12848be9c422a0064",
       "sourceName": "lib/forge-std/src/Script.sol",
       "solcConfig": {
@@ -89,12 +89,12 @@
       "versionRequirement": ">=0.6.0, <0.9.0",
       "artifacts": {
         "Script": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "Script.sol/Script.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "Script.sol/Script.json"
         }
       }
     },
     "lib/forge-std/src/Test.sol": {
-      "lastModificationDate": 1661887648326,
+      "lastModificationDate": 1662522217379,
       "contentHash": "8e1ae731c7bb8023f36077d86d18693f",
       "sourceName": "lib/forge-std/src/Test.sol",
       "solcConfig": {
@@ -134,21 +134,21 @@
       "versionRequirement": ">=0.6.0, <0.9.0",
       "artifacts": {
         "Test": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "Test.sol/Test.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "Test.sol/Test.json"
         },
         "stdError": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "Test.sol/stdError.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "Test.sol/stdError.json"
         },
         "stdMath": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "Test.sol/stdMath.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "Test.sol/stdMath.json"
         },
         "stdStorage": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "Test.sol/stdStorage.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "Test.sol/stdStorage.json"
         }
       }
     },
     "lib/forge-std/src/Vm.sol": {
-      "lastModificationDate": 1661887648326,
+      "lastModificationDate": 1662522217379,
       "contentHash": "edea6a0e9d52be7469978168f52a3ee2",
       "sourceName": "lib/forge-std/src/Vm.sol",
       "solcConfig": {
@@ -182,7 +182,7 @@
       "versionRequirement": ">=0.6.0, <0.9.0",
       "artifacts": {
         "Vm": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "Vm.sol/Vm.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "Vm.sol/Vm.json"
         }
       }
     },
@@ -221,7 +221,7 @@
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
         "console": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "src/console.sol/console.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "src/console.sol/console.json"
         }
       }
     },
@@ -260,13 +260,13 @@
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
         "console2": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "console2.sol/console2.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "console2.sol/console2.json"
         }
       }
     },
     "src/SeedNFT.sol": {
-      "lastModificationDate": 1661897905234,
-      "contentHash": "ea370a5dc73e934f54add084e37c12c6",
+      "lastModificationDate": 1663949802165,
+      "contentHash": "a1bed279c5b18d3711aa1d84634552cd",
       "sourceName": "src/SeedNFT.sol",
       "solcConfig": {
         "settings": {
@@ -309,12 +309,14 @@
         "src/helpers/IERC721Receiver.sol",
         "src/helpers/Ownable.sol",
         "src/helpers/Pausable.sol",
-        "src/helpers/Strings.sol"
+        "src/helpers/Strings.sol",
+        "src/licenses/CantBeEvil.sol",
+        "src/licenses/ICantBeEvil.sol"
       ],
       "versionRequirement": "^0.8.9",
       "artifacts": {
         "SeedNFT": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "SeedNFT.sol/SeedNFT.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "SeedNFT.sol/SeedNFT.json"
         }
       }
     },
@@ -353,7 +355,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "Address": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "Address.sol/Address.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "Address.sol/Address.json"
         }
       }
     },
@@ -392,7 +394,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "Context": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "Context.sol/Context.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "Context.sol/Context.json"
         }
       }
     },
@@ -433,7 +435,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "ERC165": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "ERC165.sol/ERC165.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "ERC165.sol/ERC165.json"
         }
       }
     },
@@ -482,7 +484,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "ERC721A": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "ERC721A.sol/ERC721A.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "ERC721A.sol/ERC721A.json"
         }
       }
     },
@@ -534,7 +536,7 @@
       "versionRequirement": "^0.8.9",
       "artifacts": {
         "ERC721AWithRoyalties": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "ERC721AWithRoyalties.sol/ERC721AWithRoyalties.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "ERC721AWithRoyalties.sol/ERC721AWithRoyalties.json"
         }
       }
     },
@@ -573,7 +575,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IERC165": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "IERC165.sol/IERC165.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "IERC165.sol/IERC165.json"
         }
       }
     },
@@ -612,7 +614,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IERC2981Royalties": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "IERC2981Royalties.sol/IERC2981Royalties.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "IERC2981Royalties.sol/IERC2981Royalties.json"
         }
       }
     },
@@ -653,7 +655,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IERC721": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "IERC721.sol/IERC721.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "IERC721.sol/IERC721.json"
         }
       }
     },
@@ -695,7 +697,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IERC721Enumerable": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "IERC721Enumerable.sol/IERC721Enumerable.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "IERC721Enumerable.sol/IERC721Enumerable.json"
         }
       }
     },
@@ -737,7 +739,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IERC721Metadata": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "IERC721Metadata.sol/IERC721Metadata.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "IERC721Metadata.sol/IERC721Metadata.json"
         }
       }
     },
@@ -776,7 +778,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IERC721Receiver": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "IERC721Receiver.sol/IERC721Receiver.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "IERC721Receiver.sol/IERC721Receiver.json"
         }
       }
     },
@@ -817,7 +819,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "Ownable": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "Ownable.sol/Ownable.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "Ownable.sol/Ownable.json"
         }
       }
     },
@@ -858,7 +860,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "Pausable": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "Pausable.sol/Pausable.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "Pausable.sol/Pausable.json"
         }
       }
     },
@@ -897,13 +899,96 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "Strings": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "Strings.sol/Strings.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "Strings.sol/Strings.json"
+        }
+      }
+    },
+    "src/licenses/CantBeEvil.sol": {
+      "lastModificationDate": 1663680209851,
+      "contentHash": "73daaf3f174eec5f712804729f76e66d",
+      "sourceName": "src/licenses/CantBeEvil.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/helpers/ERC165.sol",
+        "src/helpers/IERC165.sol",
+        "src/helpers/Strings.sol",
+        "src/licenses/ICantBeEvil.sol"
+      ],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "CantBeEvil": {
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "CantBeEvil.sol/CantBeEvil.json"
+        }
+      }
+    },
+    "src/licenses/ICantBeEvil.sol": {
+      "lastModificationDate": 1663680132667,
+      "contentHash": "66cead8a931bd6ba22c3b239f65c9259",
+      "sourceName": "src/licenses/ICantBeEvil.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "ICantBeEvil": {
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "ICantBeEvil.sol/ICantBeEvil.json"
         }
       }
     },
     "src/test/SeedNFT.t.sol": {
-      "lastModificationDate": 1661897964806,
-      "contentHash": "07c9a567b33a3d5d190c1aab67f54b55",
+      "lastModificationDate": 1663949858861,
+      "contentHash": "c5d14e3d768148164210198b552e2f90",
       "sourceName": "src/test/SeedNFT.t.sol",
       "solcConfig": {
         "settings": {
@@ -954,12 +1039,14 @@
         "src/helpers/Ownable.sol",
         "src/helpers/Pausable.sol",
         "src/helpers/Strings.sol",
+        "src/licenses/CantBeEvil.sol",
+        "src/licenses/ICantBeEvil.sol",
         "src/utils/Utilities.sol"
       ],
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "SeedNFTTest": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "SeedNFT.t.sol/SeedNFTTest.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "SeedNFT.t.sol/SeedNFTTest.json"
         }
       }
     },
@@ -998,7 +1085,7 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "console": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "Console.sol/console.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "Console.sol/console.json"
         }
       }
     },
@@ -1040,7 +1127,7 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "Utilities": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "Utilities.sol/Utilities.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "Utilities.sol/Utilities.json"
         }
       }
     }
