@@ -44,6 +44,8 @@ First run the command below inside of your terminal to get foundryup, the Foundr
 
 Then, run ```foundryup``` in a new terminal session or after reloading your ```PATH```.
 
+Next, clone this repository and cd into the path it is located in ```cd path/to/oasisnft```
+
 Then, run ```forge install; forge update;```
 
 now you should be able to deploy your own local version of the contract to rinkeby following these commands:
