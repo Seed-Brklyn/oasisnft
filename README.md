@@ -44,7 +44,9 @@ First run the command below inside of your terminal to get foundryup, the Foundr
 
 Then, run ```foundryup``` in a new terminal session or after reloading your ```PATH```.
 
-Next, clone this repository and cd into the path it is located in ```cd path/to/oasisnft```
+Next, clone this repository by running ```git clone https://github.com/Seed-Brklyn/oasisnft.git```
+
+and cd into the path that the repo is now located in ```cd path/to/oasisnft```
 
 Then, run ```forge install; forge update;```
 
