@@ -1,5 +1,5 @@
 # oasisnft
-Oasis NFT
+## Oasis NFT
                                                                         
                                          ,,,                                    
                                         ╫▓▓▓▓▓⌐                                 
@@ -36,7 +36,7 @@ Oasis NFT
                          ╙▀╝▀    ╫▓▓▓▓▓▓▓µ         ╙▀╙                          
                                   ╙╙▀▀▀▀▀                                       
 
-To Run Locally:
+### To Run Locally:
 
 First run the command below inside of your terminal to get foundryup, the Foundry toolchain installer:
 
